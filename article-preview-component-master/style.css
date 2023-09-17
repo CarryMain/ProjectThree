@@ -1,0 +1,118 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+footer {
+    position: absolute;
+    bottom:0;
+}
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-family: 'Monrope', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:720px;
+    height: 260px;
+    background-color: white;
+    border-radius: 10px;
+}
+.main {
+    display: flex;
+}
+.containerOne {
+    display: flex;
+}
+.containerTwo {
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    gap:40px;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.textNoBolder {
+    margin-top:-25px;
+    color:hsl(212, 23%, 69%);
+    line-height: 1.5;
+}
+.containerThree {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start;
+    gap:10px;
+    position: relative; 
+  }
+.three {
+    margin-left:140px;
+}
+
+.girl {
+    border-radius: 50%;
+}
+
+.textBolder {
+    font-size: 20px;
+}
+.colorsW {
+    color:hsl(212, 23%, 69%);
+    margin-top:3px;
+}
+.bold {
+    font-weight: 550;
+}
+
+.three::before {
+    content: '';
+    position: absolute;
+    bottom: 100%; 
+    height: 10px; 
+    width: 100%; 
+    transition: all 0.6s ease; 
+  }
+
+.share-icons {
+    position: absolute;
+    bottom: calc(100% + 10px); 
+    right: 0;
+    box-shadow: 0 0 5px rgba(24, 24, 24, 1);
+    padding: 5px;
+    border-radius: 5px;
+    gap: 13px;
+    text-align: center;
+    background-color: hsl(214, 17%, 51%);
+    color: white;
+    display: none;
+  }
+  
+.three:hover .share-icons,
+.share-icons:hover {
+    display: flex;
+  }
+  
+.three svg:hover path {
+    fill: #6E8098;
+  }
+  
+.share-icons::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    border: 7px solid transparent;
+    border-top-color: hsl(214, 17%, 51%);
+  }
+
+  
+ 
